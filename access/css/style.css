@@ -8,10 +8,6 @@ html{
     font-family: 'Lato', sans-serif;
 }
 
-#main{
-
-}
-
 #header{
     position: fixed;
     top: 0;
@@ -397,7 +393,4 @@ p.modal-help a{
     display: flex;
 }
 
-#footer{
-
-}
 
