@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+#main{
+
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+    
+}
+
+#nav li{ 
+    position: relative;
+}
+
+#nav > li  > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#nav li a{
+    display: block;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    font-size: 15px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a{
+    color:#000;
+    background-color: #ccc;
+    text-decoration: underline;
+}
+
+#nav li .nav-down{
+    font-size: 11px;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.subnav li{
+    list-style: none;
+}
+
+.subnav li a{
+    color: #000;
+    font-weight: bold;
+}
+
+.subnav li:hover a{
+    color:#000;
+    background-color: #ccc;
+}
+
+#header .nav-srch{
+    float: right;
+    padding: 0 24px;
+    line-height: 46px;
+}
+
+#header .nav-sr{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+#header .nav-srch:hover{
+    background-color: red;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url('/access/img/chicago.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+}
+
+#slider .text{
+    color: #fff;
+    position: absolute;
+    bottom: 16px;  
+    width: 100%;
+}
+
+#slider .text-1{
+    font-size: 25px;
+}
+
+#slider .text-2{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+#content{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-section{ 
+    padding: 64px 0;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 8px;
+}
+
+.section-heading,
+.section-sub-heading{
+    text-align: center;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#content .member{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+#content .tour-section{
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px #ddd solid;
+    list-style: none;
+}
+
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 4px 4px;
+    margin-left: 10px;
+}
+
+.tickets-list .quantity{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+.place-list{
+    margin-top: 34px;
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 15px;
+}
+.place-item{
+    float:left;
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 14px 16px;
+    font-size: 16px;
+}
+
+.place-heading{
+    font-size: 16px;
+}
+
+.place-time{
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.place-desc{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.place-button{
+    width: 108px;
+    height: 38px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 11px;
+    display: inline-block;
+    margin-top: 1px;
+    margin-bottom: 6px;
+}
+
+.place-button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container{
+    width: 600px;
+    background-color: #fff;
+    min-height: 200px;
+    position: relative;
+}
+
+button.modal-close{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding: 16px;
+    font-size: 19px;
+    background-color: #009688;
+    border: none;
+}
+
+.modal-container .modal-header{
+    background-color: #009688;
+    height: 130px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container .modal-label{
+    display: block;
+    font-size: 16px;
+}
+
+.modal-body {
+    padding: 18px;
+}
+
+input.modal-input {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+input.modal-input {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+button.modal-buy {
+    width: 100%;
+    height: 54px;
+    background-color: #009688;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+button.modal-closes {
+    width: 84px;
+    height: 38px;
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+button.modal-close:hover,
+button.modal-buy:hover,
+button.modal-closes:hover{
+    opacity: 0.9;
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+p.modal-help {
+    float: right;
+    margin-top: 25px;
+}
+
+i.fa-solid{
+    margin-left: 6px;
+    margin-top: 4px;
+}
+
+p.modal-help a{
+    color: #2196F3;
+}
+
+.modal.open{
+    display: flex;
+}
+
+#footer{
+
+}
+
